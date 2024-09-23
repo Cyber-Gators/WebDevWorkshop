@@ -1,0 +1,55 @@
+div, span {
+    padding: 20px;
+    display: block;
+}
+
+
+div {
+    background-color: orange;
+}
+
+span {
+    background-color: bisque;
+}
+
+/* descendant/child selector */
+div > span > p {
+    background-color: green;
+    color: white;
+}
+
+/*  */
+
+box {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: yellow;
+}
+
+sickBox {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    border: 3px solid red; 
+    background-color: green;
+}
+
+sickBox + box {
+    background-color: red;
+}
+
+
+
+slowBox {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    border: 3px solid red; 
+    background-color: green;
+}
+
+slowBox ~ box {
+    background-color: brown;
+}
+
