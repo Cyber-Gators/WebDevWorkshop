@@ -1,0 +1,45 @@
+/* 1. Presence Attribute Selector: Apply to <a> elements with a target attribute */
+a[target] {
+    color: blue;
+    font-weight: bold;
+}
+
+/* 2. Exact Match Attribute Selector: Apply to input fields with type="text" */
+input[type="text"] {
+    border: 2px solid green;
+}
+
+/* 3. Exact Match Attribute Selector: Apply to input fields with type="password" */
+input[type="password"] {
+    border: 2px solid red;
+}
+
+/* 4. Contains Word Attribute Selector: Apply to elements with a class list that includes "featured" */
+[class~="featured"] {
+    background-color: yellow;
+    padding: 10px;
+}
+
+/* 5. Begins With Hyphen Selector: Apply to elements where lang starts with "en" */
+[lang|="en"] {
+    font-style: italic;
+}
+
+/* 6. Starts With Attribute Selector: Apply to <a> elements where href starts with "https" */
+a[href^="https"] {
+    color: rgb(204, 0, 255);
+}
+
+/* 7. Ends With Attribute Selector: Apply to <img> elements where src ends with ".jpg" */
+img[src$=".jpg"] {
+    border: 3px solid black;
+}
+
+img[src$=".png"] {
+    border: 3px solid rgb(180, 94, 94);
+}
+
+/* 8. Contains Substring Attribute Selector: Apply to <a> elements where href contains "example" */
+a[href*="example"] {
+    text-decoration: underline;
+}
