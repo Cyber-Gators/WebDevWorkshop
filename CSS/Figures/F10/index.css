@@ -1,0 +1,115 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling Headers */
+h1::before {
+    content: "★ ";
+    color: gold;
+    font-size: 1.5em;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling Paragraphs and Text with Pseudo-elements */
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+p::after {
+    content: " → Continue reading below.";
+    font-style: italic;
+    color: #888;
+}
+
+strong {
+    color: #2c3e50;
+}
+
+span {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Link Styling with Pseudo-classes */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid #e74c3c;
+}
+
+/* Button Styling with Pseudo-classes */
+button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+button:active {
+    background-color: #1c669d;
+}
+
+button:focus {
+    outline: 2px solid #3498db;
+}
+
+/* Styling List Items with Pseudo-classes */
+ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+ul li::before {
+    content: "• ";
+    color: #2980b9;
+    font-size: 1.5em;
+}
