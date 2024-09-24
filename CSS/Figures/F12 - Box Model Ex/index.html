@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model and Sizing Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Box Model, Width & Height, Overflow, and Box Sizing</h1>
+        
+        <!-- Box with default box-sizing: content-box -->
+        <div class="box content-box">
+            <h2>Content Box (box-sizing: content-box)</h2>
+            <p>This box uses the default box-sizing: content-box, where the width and height apply only to the content area. Padding and borders are added to the total size.</p>
+        </div>
+
+        <!-- Box with box-sizing: border-box -->
+        <div class="box border-box">
+            <h2>Border Box (box-sizing: border-box)</h2>
+            <p>This box uses box-sizing: border-box, which includes the padding and border within the specified width and height.</p>
+        </div>
+
+        <!-- Box with width and height and overflow -->
+        <div class="box overflow-box">
+            <h2>Overflow Box (Overflow: auto)</h2>
+            <p>This box has a fixed width and height with overflow set to auto. If the content exceeds the box size, a scrollbar will appear.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula velit at elit scelerisque, eget tempor sem ultrices. Integer feugiat leo vitae libero sollicitudin, non eleifend nulla blandit. Phasellus euismod feugiat justo, at tincidunt dolor fermentum nec. Suspendisse vulputate risus quis est rhoncus, ut sodales purus hendrerit.</p>
+        </div>
+    </div>
+</body>
+</html>
